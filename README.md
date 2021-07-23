@@ -1,4 +1,4 @@
-#CALC-API-GQSO924-2021
+#CALCULADORA MATH_SCIENCE
 
 este projeto visa o desenvolvimento de uma api que facilite e ajude alunos do Ifal a realizarem calculos de forma mais eficiente
 
