@@ -6,7 +6,7 @@ este projeto visa o desenvolvimento de uma api que facilite e ajude alunos do If
 
 Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
 
-necessário realizar uma cópia aqui mesmo no github, na opção gitClone.
+necessário realizar uma cópia aqui mesmo no github, na opção code -> gitClone.
 
 #📋 Pré-requisitos
 
