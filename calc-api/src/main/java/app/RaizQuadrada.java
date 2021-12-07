@@ -13,7 +13,7 @@ public class RaizQuadrada {
             double sqrt = Math.sqrt(Double.parseDouble(op));
 
             // Retorna raiz quadrada para o usuário com duas casas decimais.
-            return double.format("%.2f", sqrt);
+            return String.format("%.2f", sqrt);
         } catch (NumberFormatException nfe) {
             throw new BadRequestException(String.format("Parâmetro inválido:\"%s\"", op));
         }
