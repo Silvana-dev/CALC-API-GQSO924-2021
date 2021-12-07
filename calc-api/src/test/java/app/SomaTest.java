@@ -8,7 +8,9 @@ package app;
 public class CalculadoraTest {
 
     public CalculadoraTest() {
-        }
+
+        Soma instance = new Soma();
+
         @BeforeClass
         public static void setUpClass() throws Exception {
         }
@@ -29,10 +31,22 @@ public class CalculadoraTest {
             System.out.println("soma");
             double n1 = 5.0;
             double n2 = 5.0;
-            Calculadora instance = new Soma();
             double expResult = 10.0;
             double result = instance.Soma(n1, n2);
             assertEquals(expResult, result,0);
         }
 
+        @Test
+            public void testSoma_invalido(){
+                assertThrows(IllegalArgumentException.class, {}=> (
+                    instance.Soma("a","2");
+                ));
+            }
+        @Test
+            public void testSoma_invalido(){
+                assertThrows(IllegalArgumentException.class, {}=> (
+                    instance.Soma("1","b");
+                ));
+            }
+    }
 }

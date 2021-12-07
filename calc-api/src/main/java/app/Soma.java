@@ -8,6 +8,21 @@ public abstract class Soma {
          
          return resultado;
      }
+
+     public void Soma (String Numb1,String Numb2) throws IllegalArgumentException{
+        double numb1 = 0.;
+        try {
+            numb1 = Double.parseDouble(numb1);
+        } catch (Exception e) {
+            throw new  IllegalArgumentException(String.format("Primeiro parametro invalido\n"));
+        }
+        double numb2 = 0.;
+        try {
+            numb2 = Double.parseDouble(numb1);
+        } catch (Exception e) {
+            throw new  IllegalArgumentException(String.format("Segundo parametro invalido\n"));
+        }
+     }
      
      public double getNumb1(){
          return Numb1;
