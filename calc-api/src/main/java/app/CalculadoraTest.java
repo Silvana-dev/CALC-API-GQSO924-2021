@@ -21,9 +21,7 @@ public class CalculadoraTest {
         @After
         public void tearDown() {
         }
-        /**
-         * Test of somar method, of class Calculadora.
-         */
+     
         @Test
         public void testSomar() {
             System.out.println("somar");
@@ -34,45 +32,7 @@ public class CalculadoraTest {
             double result = instance.Soma(n1, n2);
             assertEquals(expResult, result, 0);
         }
-        /**
-         * Test of subtrair method, of class Calculadora.
-         */
-        @Test
-        public void testSubtrair() {
-            System.out.println("subtrair");
-            int n1 = 5;
-            int n2 = 3;
-            Calculadora instance = new Calculadora();
-            double expResult = 2;
-            double result = instance.subtrair(n1, n2);
-            assertEquals(expResult, result, 0);
-        }
-        /**
-         * Test of multiplicar method, of class Calculadora.
-         */
-        @Test
-        public void testMultiplicar() {
-            System.out.println("multiplicar");
-            int n1 = 2;
-            int n2 = 3;
-            Calculadora instance = new Calculadora();
-            double expResult = 6;
-            double result = instance.multiplicar(n1, n2);
-            assertEquals(expResult, result, 0);
-        }
-        /**
-         * Test of dividir method, of class Calculadora.
-         */
-        @Test
-        public void testDividir() {
-            System.out.println("dividir");
-            int n1 = 5;
-            int n2 = 2;
-            Calculadora instance = new Calculadora();
-            double expResult = 2.5;
-            double result = instance.dividir(n1, n2);
-            assertEquals(expResult, result, 0);
-        }
+    
         @Test
         public void testRaizQuadrada() {
             System.out.println("raiz quadrada");
@@ -82,4 +42,5 @@ public class CalculadoraTest {
             double result = instance.rotaRaizQuadrada(op);
             assertEquals(expResult, result, 0);
         }
+}
 }
