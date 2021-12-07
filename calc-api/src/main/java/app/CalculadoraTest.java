@@ -4,7 +4,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
-
+package ../Soma.java;
 public class CalculadoraTest {
 
     public CalculadoraTest() {
@@ -29,9 +29,9 @@ public class CalculadoraTest {
             System.out.println("somar");
             int n1 = 5;
             int n2 = 5;
-            Calculadora instance = new Calculadora();
+            Calculadora instance = new Soma();
             double expResult = 10.0;
-            double result = instance.somar(n1, n2);
+            double result = instance.Soma(n1, n2);
             assertEquals(expResult, result, 0);
         }
         /**
