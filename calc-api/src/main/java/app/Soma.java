@@ -21,5 +21,4 @@ public abstract class Soma {
      public void setNumb2(double Numb2){
          this.Numb2 = Numb2;
      }
-     
 }

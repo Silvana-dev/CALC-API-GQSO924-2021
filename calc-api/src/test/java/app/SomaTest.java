@@ -4,7 +4,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
-import ../Soma.java;
+package app;
 public class CalculadoraTest {
 
     public CalculadoraTest() {
@@ -21,26 +21,18 @@ public class CalculadoraTest {
         @After
         public void tearDown() {
         }
-     
+        /**
+         * Test of somar method, of class Calculadora.
+         */
         @Test
-        public void testSomar() {
-            System.out.println("somar");
-            int n1 = 5;
-            int n2 = 5;
+        public void testSoma() {
+            System.out.println("soma");
+            double n1 = 5.0;
+            double n2 = 5.0;
             Calculadora instance = new Soma();
             double expResult = 10.0;
             double result = instance.Soma(n1, n2);
-            assertEquals(expResult, result, 0);
+            assertEquals(expResult, result,0);
         }
-    
-        @Test
-        public void testRaizQuadrada() {
-            System.out.println("raiz quadrada");
-            String op = "25";
-            RaizQuadrada instance = new RaizQuadrada();
-            double expResult = 5.0;
-            double result = instance.rotaRaizQuadrada(op);
-            assertEquals(expResult, result, 0);
-        }
-}
+
 }
