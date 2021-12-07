@@ -4,7 +4,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
-package ../Soma.java;
+import ../Soma.java;
 public class CalculadoraTest {
 
     public CalculadoraTest() {
